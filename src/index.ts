@@ -1,7 +1,6 @@
-let primeiro_valor = window.prompt("Insira o primeiro valor: ");
-let segundo_valor = window.prompt("Insira o segundo valor: ");
-primeiro_valor = parseFloat(primeiro_valor);
-segundo_valor = parseFloat(segundo_valor);
+let primeiro_valor:number = parseFloat(window.prompt("Insira o primeiro valor: ")!);
+let segundo_valor:number = parseFloat(window.prompt("Insira o segundo valor: ")!);
+
 
 alert(
   "Resultados: \n" +
@@ -12,7 +11,7 @@ alert(
     "\nMultiplicação: " +
     primeiro_valor * segundo_valor +
     "\nDivisão: " +
-    parseInt(primeiro_valor / segundo_valor) +
+    Math.round(primeiro_valor / segundo_valor )+
     "\nResto da divisão: " +
     (primeiro_valor % segundo_valor)
 );
